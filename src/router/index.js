@@ -1,10 +1,6 @@
-import signup from '../screens/signup';
-import login from '../screens/login/login';
-import {
-	StackNavigator,
-	addNavigationHelpers,
-	NavigationActions
-} from 'react-navigation';
+import signup from 'signup/';
+import login from 'login/';
+import { StackNavigator } from 'react-navigation';
 
 export const AppNavigator = StackNavigator({
 	Login: login,

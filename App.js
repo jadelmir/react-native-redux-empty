@@ -4,11 +4,7 @@
  * @flow
  */
 
-import {
-	StackNavigator,
-	addNavigationHelpers,
-	NavigationActions
-} from 'react-navigation';
+import { addNavigationHelpers } from 'react-navigation';
 import { createStore, applyMiddleware } from 'redux';
 import {
 	createReduxBoundAddListener,
@@ -18,7 +14,7 @@ import { Provider, connect } from 'react-redux';
 import React from 'react';
 import { appReducer } from 'reducer/';
 import { AppNavigator } from './src/router/index';
-
+import axios from './src/axiosConfig';
 // Note: createReactNavigationReduxMiddleware must be run before createReduxBoundAddListener
 const middleware = createReactNavigationReduxMiddleware(
 	'root',

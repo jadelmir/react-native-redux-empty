@@ -1,7 +1,8 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 
 import { navReducer } from './navReducer';
-
+import loginReducer from 'login/loginReducer';
 export const appReducer = combineReducers({
-	nav: navReducer
+	nav: navReducer,
+	authRed: loginReducer
 });
