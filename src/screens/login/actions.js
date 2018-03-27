@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const handleLogin = () => {
 	console.log('we are in the actions');
-	return { type: 'GOTO_SIGNUP' };
+	return { type: 'LOGIN' };
 };
 
 export const onUsernameChange = payload => {

@@ -13,6 +13,12 @@ export const navReducer = (state = initialState, action) => {
 				routeName: 'signupScreen'
 			});
 			break;
+		case 'LOGIN':
+			console.log('we are here');
+			nextAction = NavigationActions.navigate({
+				routeName: 'app'
+			});
+			break;
 	}
 
 	const nextState = AppNavigator.router.getStateForAction(
