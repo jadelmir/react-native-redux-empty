@@ -2,7 +2,6 @@ import axios from 'axios';
 // Add a request interceptor
 axios.interceptors.request.use(
 	function(config) {
-		config.baseURL = 'http://www.itegrators.com/extras/medreps/';
 		// if (token) {
 		//
 		// }
